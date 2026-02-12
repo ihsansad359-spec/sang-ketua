@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine Scrapbook 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= AUDIO ================= -->
+<audio id="musicMain" loop preload="auto">
+  <source src="musik.mp3" type="audio/mp3">
+</audio>
+
+<audio id="musicPage3" loop preload="auto">
+  <source src="" type="audio/mp3">
+</audio>
+
+<!-- ================= PAGE 1 ================= -->
+<section id="page1" class="page active">
+  <div class="envelope-container">
+    <div class="envelope" id="envelope">
+
+      <div class="envelope-back"></div>
+
+      <div class="envelope-letter">
+        <h2>Untuk Kamu 💕</h2>
+        <p>
+          Terima kasih sudah hadir di hidupku.<br>
+          Kamu adalah alasan senyumku setiap hari.
+        </p>
+        <button class="btn-lanjut" onclick="goPage(2)">Lanjut 💌</button>
+      </div>
+
+      <div class="envelope-front"></div>
+      <div class="envelope-flap"></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+<section id="page2" class="page">
+  <h2 class="judul">Kenangan Kita 📸</h2>
+
+  <div class="gallery">
+    <img src="foto/f1.jpg" onclick="openPopup(this,'Kamu terlalu indah ❤️')">
+    <img src="foto/f2.jpg" onclick="openPopup(this,'Setiap kali aku melihatmu, ada desir yang tak bisa ditenangkan 🌸')">
+    <img src="foto/f3.jpg" onclick="openPopup(this,'Ada degup yang tak bisa diperlambat ✨')">
+    <img src="foto/f4.jpg" onclick="openPopup(this,'Ada suara hati yang mengingatkan dengan lembut 💕')">
+    <img src="foto/f5.jpg" onclick="openPopup(this,'Jika cinta ini bernilai, ia akan kuat walau menunggu 💖')">
+    <img src="foto/f6.jpg" onclick="openPopup(this,'Bukan hanya rupa, tapi caramu membawa diri 😊')">
+    <img src="foto/f7.jpg" onclick="openPopup(this,'Tertawamu menenangkan dunia 📖')">
+    <img src="foto/f8.jpg" onclick="openPopup(this,'Diam pun kamu berbicara 🤍')">
+    <img src="foto/f9.jpg" onclick="openPopup(this,'Terlalu indah untuk disalahartikan 👣')">
+    <img src="foto/f10.jpg" onclick="openPopup(this,'jika langit sedang tidak sibuk 💝')">
+    <img src="foto/f11.jpg" onclick="openPopup(this,'Maka ia  ❤️')">
+    <img src="foto/f12.jpg" onclick="openPopup(this,'Menyampaikan satu kalimat 💐')">
+    <img src="foto/f13.jpg" onclick="openPopup(this,'jangan  jadi milik siapa-siapa dulu.? 💘')">
+  </div>
+
+  <button class="btn-next" onclick="goPage(3)">Terima Kasih ❤️</button>
+</section>
+
+<!-- ================= POPUP ================= -->
+<div id="popup" class="popup">
+  <div class="popup-card">
+    <img id="popup-img" alt="">
+    <p id="popup-text"></p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+</div>
+
+<!-- ================= PAGE 3 ================= -->
+<section id="page3" class="page">
+  <div class="video-card">
+    <video controls playsinline>
+      <source src="vidio.mp4" type="video/mp4">
+    </video>
+    <p>
+      Tapi jika langit tidak sibuk, maukah ia menyampaikan satu kalimat yang bergetar di dada<br>
+      jangan jadi milik siapa siapa dulu. Bukan karen aku tak percaya takdir, tapi sekarang aku❤️<br>
+      sedang menyiapkan diri agar saat semesta menoleh, aku telah mmenjadi jawaban dari apa yang diam-diam kau
+      tunggu
+    </p>
+  </div>
+</section>
+
+<script src="scripts.js"></script>
+</body>
+</html>
